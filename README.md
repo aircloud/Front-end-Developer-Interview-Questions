@@ -1,209 +1,214 @@
-#Front-end Job Interview Questions
+#前端工作面试问题
 
-This file contains a number of front-end interview questions that can be used when vetting potential candidates. It is by no means recommended to use every single question here on the same candidate (that would take hours). Choosing a few items from this list should help you vet the intended skills you require.
+本文包含了一些用于考查候选者的前端面试问题。不建议对单个候选者问及每个问题 (那需要好几个小时)。只要从列表里挑选一些，就能帮助你考查候选者是否具备所需要的技能。
 
-**Note:** Keep in mind that many of these questions are open-ended and could lead to interesting discussions that tell you more about the person's capabilities than a straight answer would.
+**备注：** 这些问题中很多都是开放性的，可以引发有趣的讨论。这比直接的答案更能体现此人的能力。
 
-## Table of Contents
+## <a name='toc'>目录</a>
 
-  1. [General Questions](#general-questions)
-  1. [HTML Questions](#html-questions)
-  1. [CSS Questions](#css-questions)
-  1. [JS Questions](#js-questions)
-  1. [Testing Questions](#testing-questions)
-  1. [Performance Questions](#performance-questions)
-  1. [Network Questions](#network-questions)
-  1. [Coding Questions](#coding-questions)
-  1. [Fun Questions](#fun-questions)
+  1. [常见问题](#general-questions)
+  1. [HTML 相关问题](#html-questions)
+  1. [CSS 相关问题](#css-questions)
+  1. [JS 相关问题](#js-questions)
+  1. [测试相关问题](#testing-questions)
+  1. [效能相关问题](#performance-questions)
+  1. [网络相关问题](#network-questions)
+  1. [代码相关问题](#coding-questions)
+  1. [趣味问题](#fun-questions)
 
-## Getting Involved
+## 参与协作
 
-  1. [Contributors](#contributors)
-  1. [How to Contribute](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/CONTRIBUTING.md)
-  1. [License](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/LICENSE.md)
+  1. [贡献者](#contributors)
+  1. [如何参与贡献](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/CONTRIBUTING.md)
+  1. [许可协议](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/LICENSE.md)
 
-#### General Questions:
+#### <a name='general-questions'>常见问题：</a>
 
-* What did you learn yesterday/this week?
-* What excites or interests you about coding?
-* What is a recent technical challenge you experienced and how did you solve it?
-* What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
-* Talk about your preferred development environment.
-* Which version control systems are you familiar with?
-* Can you describe your workflow when you create a web page?
-* If you have 5 different stylesheets, how would you best integrate them into the site?
-* Can you describe the difference between progressive enhancement and graceful degradation?
-* How would you optimize a website's assets/resources?
-* How many resources will a browser download from a given domain at a time?
-  * What are the exceptions?
-* Name 3 ways to decrease page load (perceived or actual load time).
-* If you jumped on a project and they used tabs and you used spaces, what would you do?
-* Describe how you would create a simple slideshow page.
-* If you could master one technology this year, what would it be?
-* Explain the importance of standards and standards bodies.
-* What is Flash of Unstyled Content? How do you avoid FOUC?
-* Explain what ARIA and screenreaders are, and how to make a website accessible.
-* Explain some of the pros and cons for CSS animations versus JavaScript animations.
-* What does CORS stand for and what issue does it address?
+* 你在昨天/本周学到了什么？
+* 编写代码的哪些方面能够使你兴奋或感兴趣？
+* 你最近遇到过什么技术挑战？你是如何解决的？
+* 在制作一个网页应用或网站的过程中，你是如何考虑其 UI、安全性、高性能、SEO、可维护性以及技术因素的？
+* 请谈谈你喜欢的开发环境。
+* 你最熟悉哪一套版本控制系统？
+* 你能描述当你制作一个网页的工作流程吗？
+* 假若你有 5 个不同的样式文件 (stylesheets), 整合进网站的最好方式是?
+* 你能描述渐进增强 (progressive enhancement) 和优雅降级 (graceful degradation) 之间的不同吗?
+* 你如何对网站的文件和资源进行优化？
+* 浏览器同一时间可以从一个域名下载多少资源？
+  * 有什么例外吗？
+* 请说出三种减少页面加载时间的方法。(加载时间指感知的时间或者实际加载时间)
+* 如果你参与到一个项目中，发现他们使用 Tab 来缩进代码，但是你喜欢空格，你会怎么做？
+* 请写一个简单的幻灯效果页面。
+* 如果今年你打算熟练掌握一项新技术，那会是什么？
+* 请谈谈你对网页标准和标准制定机构重要性的理解。
+* 什么是 FOUC (无样式内容闪烁)？你如何来避免 FOUC？
+* 请解释什么是 ARIA 和屏幕阅读器 (screenreaders)，以及如何使网站实现无障碍访问 (accessible)。
+* 请解释 CSS 动画和 JavaScript 动画的优缺点。
+* 什么是跨域资源共享 (CORS)？它用于解决什么问题？
 
-#### HTML Questions:
+#### <a name='html-questions'>HTML 相关问题：</a>
 
-* What does a `doctype` do?
-* What's the difference between full standards mode, almost standards mode and quirks mode?
-* What's the difference between HTML and XHTML?
-* Are there any problems with serving pages as `application/xhtml+xml`?
-* How do you serve a page with content in multiple languages?
-* What kind of things must you be wary of when design or developing for multilingual sites?
-* What are `data-` attributes good for?
-* Consider HTML5 as an open web platform. What are the building blocks of HTML5?
-* Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
-* Describe the difference between `<script>`, `<script async>` and `<script defer>`.
-* Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? Do you know any exceptions?
-* What is progressive rendering?
-* Have you used different HTML templating languages before?
+* `doctype`(文档类型) 的作用是什么？
+	* [参考这里](https://www.10000h.top/short.html#short/22)
+* 浏览器标准模式 (standards mode) 、几乎标准模式（almost standards mode）和怪异模式 (quirks mode) 之间的区别是什么？
+	* 参考[这里](https://developer.mozilla.org/zh-CN/docs/%E6%80%AA%E5%BC%82%E6%A8%A1%E5%BC%8F%E5%92%8C%E6%A0%87%E5%87%86%E6%A8%A1%E5%BC%8F)
+* HTML 和 XHTML 有什么区别？
+* 如果页面使用 'application/xhtml+xml' 会有什么问题吗？
+* 如果网页内容需要支持多语言，你会怎么做？
+	* 静态多语言(准备多种界面)、动态多语言、数据库层面支持多语言、表层面、字段层面。
+* 在设计和开发多语言网站时，有哪些问题你必须要考虑？
+* 使用 `data-` 属性的好处是什么？
+* 如果把 HTML5 看作做一个开放平台，那它的构建模块有哪些？
+* 请描述 `cookies`、`sessionStorage` 和 `localStorage` 的区别。
+	* [sessionStorage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/sessionStorage)、[localStorage](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/localStorage)。 亲测：sessionStorage只能在一个界面内访问，而后者可以在一个域名下访问
+* 请解释 `<script>`、`<script async>` 和 `<script defer>` 的区别。
+* 为什么通常推荐将 CSS `<link>` 放置在 `<head></head>` 之间，而将 JS `<script>` 放置在 `</body>` 之前？你知道有哪些例外吗？
+* 什么是渐进式渲染 (progressive rendering)？
+* 你用过哪些不同的 HTML 模板语言？
 
-#### CSS Questions:
+#### <a name='css-questions'>CSS 相关问题：</a>
 
-* What is the difference between classes and IDs in CSS?
-* What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
-* Describe Floats and how they work.
-* Describe z-index and how stacking context is formed.
-* Describe BFC(Block Formatting Context) and how it works.
-* What are the various clearing techniques and which is appropriate for what context?
-* Explain CSS sprites, and how you would implement them on a page or site.
-* What are your favourite image replacement techniques and which do you use when?
-* How would you approach fixing browser-specific styling issues?
-* How do you serve your pages for feature-constrained browsers?
-  * What techniques/processes do you use?
-* What are the different ways to visually hide content (and make it available only for screen readers)?
-* Have you ever used a grid system, and if so, what do you prefer?
-* Have you used or implemented media queries or mobile specific layouts/CSS?
-* Are you familiar with styling SVG?
-* How do you optimize your webpages for print?
-* What are some of the "gotchas" for writing efficient CSS?
-* What are the advantages/disadvantages of using CSS preprocessors?
-  * Describe what you like and dislike about the CSS preprocessors you have used.
-* How would you implement a web design comp that uses non-standard fonts?
-* Explain how a browser determines what elements match a CSS selector.
-* Describe pseudo-elements and discuss what they are used for.
-* Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
-* What does ```* { box-sizing: border-box; }``` do? What are its advantages?
-* List as many values for the display property that you can remember.
-* What's the difference between inline and inline-block?
-* What's the difference between a relative, fixed, absolute and statically positioned element?
-* The 'C' in CSS stands for Cascading.  How is priority determined in assigning styles (a few examples)?  How can you use this system to your advantage?
-* What existing CSS frameworks have you used locally, or in production? How would you change/improve them?
-* Have you played around with the new CSS Flexbox or Grid specs?
-* How is responsive design different from adaptive design?
-* Have you ever worked with retina graphics? If so, when and what techniques did you use?
-* Is there any reason you'd want to use `translate()` instead of *absolute positioning*, or vice-versa? And why?
+* CSS 中类 (classes) 和 ID 的区别。
+* 请问 "resetting" 和 "normalizing" CSS 之间的区别？你会如何选择，为什么？
+* 请解释浮动 (Floats) 及其工作原理。
+* 描述`z-index`和叠加上下文是如何形成的。
+* 请描述 BFC(Block Formatting Context) 及其如何工作。
+* 列举不同的清除浮动的技巧，并指出它们各自适用的使用场景。
+* 请解释 CSS sprites，以及你要如何在页面或网站中实现它。
+* 你最喜欢的图片替换方法是什么，你如何选择使用。
+* 你会如何解决特定浏览器的样式问题？
+* 如何为有功能限制的浏览器提供网页？
+  * 你会使用哪些技术和处理方法？
+* 有哪些的隐藏内容的方法 (如果同时还要保证屏幕阅读器可用呢)？
+* 你用过栅格系统 (grid system) 吗？如果使用过，你最喜欢哪种？
+* 你用过媒体查询，或针对移动端的布局/CSS 吗？
+* 你熟悉 SVG 样式的书写吗？
+* 如何优化网页的打印样式？
+* 在书写高效 CSS 时会有哪些问题需要考虑？
+* 使用 CSS 预处理器的优缺点有哪些？
+  * 请描述你曾经使用过的 CSS 预处理器的优缺点。
+* 如果设计中使用了非标准的字体，你该如何去实现？
+* 请解释浏览器是如何判断元素是否匹配某个 CSS 选择器？
+* 请描述伪元素 (pseudo-elements) 及其用途。
+* 请解释你对盒模型的理解，以及如何在 CSS 中告诉浏览器使用不同的盒模型来渲染你的布局。
+* 请解释 ```* { box-sizing: border-box; }``` 的作用, 并且说明使用它有什么好处？
+* 请罗列出你所知道的 display 属性的全部值
+* 请解释 inline 和 inline-block 的区别？
+* 请解释 relative、fixed、absolute 和 static 元素的区别
+* CSS 中字母 'C' 的意思是叠层 (Cascading)。请问在确定样式的过程中优先级是如何决定的 (请举例)？如何有效使用此系统？
+* 你在开发或生产环境中使用过哪些 CSS 框架？你觉得应该如何改善他们？
+* 请问你有尝试过 CSS Flexbox 或者 Grid 标准规格吗？
+* 为什么响应式设计 (responsive design) 和自适应设计 (adaptive design) 不同？
+* 你有兼容 retina 屏幕的经历吗？如果有，在什么地方使用了何种技术？
+* 请问为何要使用 `translate()` 而非 *absolute positioning*，或反之的理由？为什么？
 
-#### JS Questions:
+#### <a name='js-questions'>JS 相关问题：</a>
 
-* Explain event delegation
-* Explain how `this` works in JavaScript
-* Explain how prototypal inheritance works
-* What do you think of AMD vs CommonJS?
-* Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
-  * What needs to be changed to properly make it an IIFE?
-* What's the difference between a variable that is: `null`, `undefined` or undeclared?
-  * How would you go about checking for any of these states?
-* What is a closure, and how/why would you use one?
-* What's a typical use case for anonymous functions?
-* How do you organize your code? (module pattern, classical inheritance?)
-* What's the difference between host objects and native objects?
-* Difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
-* What's the difference between `.call` and `.apply`?
-* Explain `Function.prototype.bind`.
-* When would you use `document.write()`?
-* What's the difference between feature detection, feature inference, and using the UA string?
-* Explain Ajax in as much detail as possible.
-* What are the advantages and disadvantages of using Ajax?
-* Explain how JSONP works (and how it's not really Ajax).
-* Have you ever used JavaScript templating?
-  * If so, what libraries have you used?
-* Explain "hoisting".
-* Describe event bubbling.
-* What's the difference between an "attribute" and a "property"?
-* Why is extending built-in JavaScript objects not a good idea?
-* Difference between document load event and document DOMContentLoaded event?
-* What is the difference between `==` and `===`?
-* Explain the same-origin policy with regards to JavaScript.
-* Make this work:
+* 请解释事件代理 (event delegation)。
+* 请解释 JavaScript 中 `this` 是如何工作的。
+* 请解释原型继承 (prototypal inheritance) 的原理。
+* 你怎么看 AMD vs. CommonJS？
+* 请解释为什么接下来这段代码不是 IIFE (立即调用的函数表达式)：`function foo(){ }();`.
+  * 要做哪些改动使它变成 IIFE?
+* 描述以下变量的区别：`null`，`undefined` 或 `undeclared`？
+  * 该如何检测它们？
+* 什么是闭包 (closure)，如何使用它，为什么要使用它？
+	* [大概这一篇文章就够了](http://www.jianshu.com/p/21a16d44f150)，另外参考我自己写的 [静态作用域](http://aircloud.10000h.top/43)
+* 请举出一个匿名函数的典型用例？
+* 你是如何组织自己的代码？是使用模块模式，还是使用经典继承的方法？
+* 请指出 JavaScript 宿主对象 (host objects) 和原生对象 (native objects) 的区别？
+* 请指出以下代码的区别：`function Person(){}`、`var person = Person()`、`var person = new Person()`？
+* `.call` 和 `.apply` 的区别是什么？
+* 请解释 `Function.prototype.bind`？
+* 在什么时候你会使用 `document.write()`？
+* 请指出浏览器特性检测，特性推断和浏览器 UA 字符串嗅探的区别？
+* 请尽可能详尽的解释 Ajax 的工作原理。
+* 使用 Ajax 都有哪些优劣？
+* 请解释 JSONP 的工作原理，以及它为什么不是真正的 Ajax。
+* 你使用过 JavaScript 模板系统吗？
+  * 如有使用过，请谈谈你都使用过哪些库？
+* 请解释变量声明提升 (hoisting)。
+* 请描述事件冒泡机制 (event bubbling)。
+* "attribute" 和 "property" 的区别是什么？
+* 为什么扩展 JavaScript 内置对象不是好的做法？
+* 请指出 document load 和 document DOMContentLoaded 两个事件的区别。
+* `==` 和 `===` 有什么不同？
+* 请解释 JavaScript 的同源策略 (same-origin policy)。
+* 如何实现下列代码：
 ```javascript
-duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
+[1,2,3,4,5].duplicator(); // [1,2,3,4,5,1,2,3,4,5]
 ```
-* Why is it called a Ternary expression, what does the word "Ternary" indicate?
-* What is `"use strict";`? what are the advantages and disadvantages to using it?
-* Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
-* Why is it, in general, a good idea to leave the global scope of a website as-is and never touch it?
-* Why would you use something like the `load` event? Does this event have disadvantages? Do you know any alternatives, and why would you use those?
-* Explain what a single page app is and how to make one SEO-friendly.
+* 什么是三元表达式 (Ternary expression)？“三元 (Ternary)” 表示什么意思？
+* 什么是 `"use strict";` ? 使用它的好处和坏处分别是什么？
+* 请实现一个遍历至 `100` 的 for loop 循环，在能被 `3` 整除时输出 **"fizz"**，在能被 `5` 整除时输出 **"buzz"**，在能同时被 `3` 和 `5` 整除时输出 **"fizzbuzz"**。
+* 为何通常会认为保留网站现有的全局作用域 (global scope) 不去改变它，是较好的选择？
+* 为何你会使用 `load` 之类的事件 (event)？此事件有缺点吗？你是否知道其他替代品，以及为何使用它们？
+* 请解释什么是单页应用 (single page app), 以及如何使其对搜索引擎友好 (SEO-friendly)。
 * What is the extent of your experience with Promises and/or their polyfills?
-* What are the pros and cons of using Promises instead of callbacks?
-* What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
-* What tools and techniques do you use debugging JavaScript code?
-* What language constructions do you use for iterating over object properties and array items?
-* Explain the difference between mutable and immutable objects.
-  * What is an example of an immutable object in JavaScript?
-  * What are the pros and cons of immutability?
-  * How can you achieve immutability in your own code?
-* Explain the difference between synchronous and asynchronous functions.
-* What is event loop?
-  * What is the difference between call stack and task queue?
-* Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
+* 使用 Promises 而非回调 (callbacks) 优缺点是什么？
+* 使用一种可以编译成 JavaScript 的语言来写 JavaScript 代码有哪些优缺点？
+* 你使用哪些工具和技术来调试 JavaScript 代码？
+* 你会使用怎样的语言结构来遍历对象属性 (object properties) 和数组内容？
+* 请解释可变 (mutable) 和不变 (immutable) 对象的区别。
+  * 请举出 JavaScript 中一个不变性对象 (immutable object) 的例子？
+  * 不变性 (immutability) 有哪些优缺点？
+  * 如何用你自己的代码来实现不变性 (immutability)？
+* 请解释同步 (synchronous) 和异步 (asynchronous) 函数的区别。
+* 什么是事件循环 (event loop)？
+  * 请问调用栈 (call stack) 和任务队列 (task queue) 的区别是什么？
+* 解释 `function foo() {}` 与 `var foo = function() {}` 用法的区别
 
-#### Testing Questions:
+#### <a name='testing-questions'>测试相关问题：</a>
 
-* What are some advantages/disadvantages to testing your code?
-* What tools would you use to test your code's functionality?
-* What is the difference between a unit test and a functional/integration test?
-* What is the purpose of a code style linting tool?
+* 对代码进行测试的有什么优缺点？
+* 你会用什么工具测试你的代码功能？
+* 单元测试与功能/集成测试的区别是什么？
+* 代码风格 linting 工具的作用是什么？
 
-#### Performance Questions:
+#### <a name='performance-questions'>效能相关问题：</a>
 
-* What tools would you use to find a performance bug in your code?
-* What are some ways you may improve your website's scrolling performance?
-* Explain the difference between layout, painting and compositing.
+* 你会用什么工具来查找代码中的性能问题？
+* 你会用什么方式来增强网站的页面滚动效能？
+* 请解释 layout、painting 和 compositing 的区别。
 
-#### Network Questions:
+#### <a name='network-questions'>网络相关问题：</a>
 
-* Traditionally, why has it been better to serve site assets from multiple domains?
-* Do your best to describe the process from the time you type in a website's URL to it finishing loading on your screen.
-* What are the differences between Long-Polling, Websockets and Server-Sent Events?
-* Explain the following request and response headers:
+* 为什么传统上利用多个域名来提供网站资源会更有效？
+* 请尽可能完整得描述从输入 URL 到整个网页加载完毕及显示在屏幕上的整个流程。
+* Long-Polling、Websockets 和 Server-Sent Event 之间有什么区别？
+* 请描述以下 request 和 response headers：
   * Diff. between Expires, Date, Age and If-Modified-...
   * Do Not Track
   * Cache-Control
   * Transfer-Encoding
   * ETag
   * X-Frame-Options
-* What are HTTP methods? List all HTTP methods that you know, and explain them.
+* 什么是 HTTP method？请罗列出你所知道的所有 HTTP method，并给出解释。
 
-#### Coding Questions:
+#### <a name='coding-questions'>代码相关的问题：</a>
 
-*Question: What is the value of `foo`?*
+*问题：`foo`的值是什么？*
 ```javascript
 var foo = 10 + '20';
 ```
 
-*Question: How would you make this work?*
+*问题：如何实现以下函数？*
 ```javascript
 add(2, 5); // 7
 add(2)(5); // 7
 ```
 
-*Question: What value is returned from the following statement?*
+*问题：下面的语句的返回值是什么？*
 ```javascript
 "i'm a lasagna hog".split("").reverse().join("");
 ```
 
-*Question: What is the value of `window.foo`?*
+*问题：`window.foo`的值是什么？*
 ```javascript
 ( window.foo || ( window.foo = "bar" ) );
 ```
 
-*Question: What is the outcome of the two alerts below?*
+*问题：下面两个 alert 的结果是什么？*
 ```javascript
 var foo = "Hello";
 (function() {
@@ -213,21 +218,21 @@ var foo = "Hello";
 alert(foo + bar);
 ```
 
-*Question: What is the value of `foo.length`?*
+*问题：`foo.length`的值是什么？*
 ```javascript
 var foo = [];
 foo.push(1);
 foo.push(2);
 ```
 
-*Question: What is the value of `foo.x`?*
+*问题：`foo.x`的值是什么？*
 ```javascript
 var foo = {n: 1};
 var bar = foo;
 foo.x = foo = {n: 2};
 ```
 
-*Question: What does the following code print?*
+*问题：下面代码的输出是什么？*
 ```javascript
 console.log('one');
 setTimeout(function() {
@@ -236,18 +241,18 @@ setTimeout(function() {
 console.log('three');
 ```
 
-#### Fun Questions:
+#### <a name='fun-questions'>趣味问题：</a>
 
-* What's a cool project that you've recently worked on?
-* What are some things you like about the developer tools you use?
-* Who inspires you in the front-end community?
-* Do you have any pet projects? What kind?
-* What's your favorite feature of Internet Explorer?
-* How do you like your coffee?
+* 你最近写过什么的很酷的项目吗？
+* 在你使用的开发工具中，最喜欢哪些方面？
+* 谁使你踏足了前端开发领域？
+* 你有什么业余项目吗？是哪种类型的？
+* 你最爱的 IE 特性是什么？
+* 你对咖啡有没有什么喜好？
 
 
-#### Contributors:
+#### <a name='contributors'>贡献者：</a>
 
-This document started in 2009 as a collaboration of [@paul_irish](https://twitter.com/paul_irish) [@bentruyman](https://twitter.com/bentruyman) [@cowboy](https://twitter.com/cowboy) [@ajpiano](https://twitter.com/ajpiano)  [@SlexAxton](https://twitter.com/slexaxton) [@boazsender](https://twitter.com/boazsender) [@miketaylr](https://twitter.com/miketaylr) [@vladikoff](https://twitter.com/vladikoff) [@gf3](https://twitter.com/gf3) [@jon_neal](https://twitter.com/jon_neal) [@sambreed](https://twitter.com/sambreed) and [@iansym](https://twitter.com/iansym).
+本文档始于 2009 年，是以下作者的合作成果：[@paul_irish](https://twitter.com/paul_irish) [@bentruyman](https://twitter.com/bentruyman) [@cowboy](https://twitter.com/cowboy) [@ajpiano](https://twitter.com/ajpiano) [@SlexAxton](https://twitter.com/slexaxton) [@boazsender](https://twitter.com/boazsender) [@miketaylr](https://twitter.com/miketaylr) [@vladikoff](https://twitter.com/vladikoff) [@gf3](https://twitter.com/gf3) [@jon_neal](https://twitter.com/jon_neal) [@sambreed](https://twitter.com/sambreed) 和 [@iansym](https://twitter.com/iansym)。
 
-It has since received contributions from over [100 developers](https://github.com/h5bp/Front-end-Developer-Interview-Questions/graphs/contributors).
+时至今日，文档已经融入超过 [100 位开发者](https://github.com/h5bp/Front-end-Developer-Interview-Questions/graphs/contributors)的贡献。
